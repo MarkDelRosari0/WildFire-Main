@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Activities</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+<div class="container">
+  <div class="dimmer"></div>
+  <div class="title"><h1>A Quiz of <span class="ice">Wild</span><span class="fire">Fire</span></h1></div>
+  <div class="quizContainer" id="quizContainer">
+    <div class="welcome" id="welcome">Start Quiz</div>
+    <div class="question" id="question"></div>
+    <div class="answer" id="answer1"></div>
+    <div class="answer" id="answer2"></div>
+    <div class="answer" id="answer3"></div>
+    <div class="answer" id="answer4"></div>
+    <div class="tabContainer" id="tabContainer">
+      <div class="next tab" id="next">Next</div>
+    </div>
+  </div>
+  <div class="quizEnd"id="quizEnd">
+    <div class="score" id="score">You scored <span class="scoreNum" id="scoreNum"></span> out of 5!</div>
+    <div class="startOver startOverTab" ><a href="quiz2.html" style="text-decoration: none; color: white;">Next Quiz</a></div>
+    <div class="startOver startOverTab" id="startOver">Start Again</div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

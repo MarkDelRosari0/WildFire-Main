@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Jumble Game</title>
+    <link rel="stylesheet" type="text/css" href="quiz2.css">
+</head>
+<body>
+    <h1>Word Jumble</h1>
+    <p>Unscramble the word:</p>
+    <p id="jumbledWord"></p>
+    <input type="text" id="guessInput" placeholder="Enter your guess">
+    <button onclick="checkGuess()">Submit Guess</button>
+
+    <!-- Modal for Correct Guess -->
+    <div id="correctModal" class="modal">
+        <div class="modal-content">
+            <p>Correct! You unscrambled the word!</p>
+            <button onclick="continueGame()">Continue</button>
+        </div>
+    </div>
+
+    <!-- Modal for Incorrect Guess -->
+    <div id="incorrectModal" class="modal">
+        <div class="modal-content">
+            <p>Incorrect guess. Would you like to try again?</p>
+            <button onclick="retryGame()">Retry</button>
+            <button onclick="endGame()">End Game</button>
+        </div>
+    </div>
+
+    <!-- Modal for New Word -->
+    <div id="newWordModal" class="modal">
+        <div class="modal-content">
+            <p>Do you want to try a new word?</p>
+            <button onclick="continueGame()">Yes</button>
+            <button onclick="endGame()">No</button>
+        </div>
+    </div>
+
+    <script src="quiz2.js"></script>
+</body>
