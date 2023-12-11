@@ -1,19 +1,19 @@
 $(document).ready(function(){
   /* store questions and answers */
   var q = [
-    "Which of the following best describe a wildfire?",
-    "How many biological sons and daughters does Jaime Lannister have?",
-    "What does Samwell stab a White Walker with that causes it to shatter like ice?",
-    "What is the name of Ned Stark's executioner?",
-    "What does Tyrion Lannister get his squire Podrick in thanks for saving his life?",
+    "1. What is the primary branch of Earth science that focuses on the study of the Earth's materials and processes?",
+    "2. Which branch of Earth science deals with the study of oceans, seas, and coastal marine environments?",
+    "3. What field of Earth science is concerned with atmospheric processes and phenomena, including weather?",
+    "4. Which Earth science discipline studies celestial objects in space and the physical Universe?",
+    "5. What branch of Earth science focuses on the Earth's water resources, including its movement in relation to land?",
     
   ];
   var a = [
-    "a. A natural disaster caused by lightning strikes ", "    b. A human-caused fire in a forested area", "    c. A controlled burn for ecological management","d. A large, uncontrolled fire in a forested area",
-    "0", "  1", "3", "2",
-    "A dagger", "Valyrian steel", "An arrow", "Dragonglass",
-    "The Hound", "Ser Llyn Payne", "Jamie Lannister", "Ser Barristan Selmy",
-    "A bag of gold", "3 Whores", "A sword", "Wine",
+    "A) Geology", "B) Astronomy", "C) Hydrology","D) Oceanography",
+    "A) Geology", "B) Meteorology", "C) Oceanography", "D) Hydrology",
+    "A) Astronomy", "B) Hydrology", "C) Meteorology", "D) Geology",
+    "A) Geology", "B) Astronomy", "C)Hydrology ","D) Oceanography",
+    "A) Oceanography", "B) Astronomy", "C) Meteorology", "D) Hydrology",
    
           ];
   var qCount = 0;
@@ -46,7 +46,7 @@ $(document).ready(function(){
   /* answering questions & update score */
   $('.answer').click(function(){
     clickCount++;
-    if ($(this).text() === a[3] || $(this).text() === a[7] || $(this).text() === a[9] || $(this).text() === a[12] || $(this).text() === a[19] || $(this).text() === a[20] || $(this).text() === a[27] || $(this).text() === a[31] || $(this).text() === a[32] || $(this).text() === a[38] || $(this).text() === a[41] || $(this).text() === a[44] || $(this).text() === a[51] || $(this).text() === a[52] || $(this).text() === a[57] || $(this).text() === a[63] || $(this).text() === a[65] || $(this).text() === a[68] || $(this).text() === a[72] || $(this).text() === a[79]) {
+    if ($(this).text() === a[0] || $(this).text() === a[6] || $(this).text() === a[10] || $(this).text() === a[13] || $(this).text() === a[19] || $(this).text() === a[20] || $(this).text() === a[27] || $(this).text() === a[31] || $(this).text() === a[32] || $(this).text() === a[38] || $(this).text() === a[41] || $(this).text() === a[44] || $(this).text() === a[51] || $(this).text() === a[52] || $(this).text() === a[57] || $(this).text() === a[63] || $(this).text() === a[65] || $(this).text() === a[68] || $(this).text() === a[72] || $(this).text() === a[79]) {
       $(this).css("background", "#337147");
       if (clickCount === 1) {
         score++;
